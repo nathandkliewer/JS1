@@ -1,5 +1,7 @@
-
-var age = prompt("How old are you?","");
-if (age < 21) {
-    document.write("No beer for you!");
-};
+Const myName = "Nathan";
+console.log(myName,"one");
+{
+  Const myName = "Christa";
+  console.log(myName,"two");
+}
+Console.log(myName,"three");
