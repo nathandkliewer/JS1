@@ -9,7 +9,6 @@ alert (age);
 if (age > 1997) {
     document.write("No beer for you!");
 
-
 }
 else { document.write("Have a beer");
 };
