@@ -1,19 +1,8 @@
-// feilds
-let emailArr;
-var yourEmail;
+let dogsAge = parseInt(prompt ("how old is your dog?", '3'));
 
-while (true) {
-  //user input
-  var yourEmail = prompt('What is your email?');
-  emailArr = yourEmail.split("");
+function dogsAgeCalulator(age)
 
-  if (!(emailArr.includes('@'))) {
-    var yourEmail = prompt('Did you forgot the "@"? Please try again.');
-  }
-  else if (!(emailArr.includes('.'))) {
-    var yourEmail = prompt('That was not a valid email. Please try again.');
-  }
-  else {
-    alert('Thanks for providing a valid email.');
-  }
+ { return age * 7;)
+
 }
+if(!isNaN(dogsAge()
