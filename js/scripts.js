@@ -1,10 +1,19 @@
-(function(){
-  "use strict";
-  /* Start of your code */
-  function greetMe(yourName) {
-    alert('Hello ' + yourName);
-  }
+// feilds
+let emailArr;
+var yourEmail;
 
-  greetMe('World');
-  /* End of your code */
-})();
+while (true) {
+  //user input
+  var yourEmail = prompt('What is your email?');
+  emailArr = yourEmail.split("");
+
+  if (!(emailArr.includes('@'))) {
+    var yourEmail = prompt('Did you forgot the "@"? Please try again.');
+  }
+  else if (!(emailArr.includes('.'))) {
+    var yourEmail = prompt('That was not a valid email. Please try again.');
+  }
+  else {
+    alert('Thanks for providing a valid email.');
+  }
+}
