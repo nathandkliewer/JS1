@@ -1,8 +1,16 @@
-let dogsAge = parseInt(prompt ("how old is your dog?", '3'));
+const buttonElement = document.getElementById('btn');
 
-function dogsAgeCalulator(age)
+// Add a handler for the 'click' event by providing a callback function.
+// Whenever the element is clicked, a pop-up with "Element clicked!" will
+// appear.
+buttonElement.addEventListener('click', function (event) {
+  alert('Element clicked through function!');
+});
 
- { return age * 7;)
-
-}
-if(!isNaN(dogsAge()
+// For compatibility, a non-function object with a `handleEvent` property is
+// treated just the same as a function itself.
+buttonElement.addEventListener('click', {
+  handleEvent: function (event) {
+    alert('Element clicked through handleEvent property!');
+  }
+});
